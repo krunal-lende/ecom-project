@@ -1,37 +1,12 @@
-# ecom-project
-sample  of e-com project 
-# React E-commerce Assignment
+# React + Vite
 
- This project is built using React with Vite.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
- Use following Commands
-   npm install
-   npm run dev
+Currently, two official plugins are available:
 
-  The project starts from the Homepage, which displays all product categories.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-    If a category is selected, only products belonging to that specific category will be shown.
+## Expanding the ESLint configuration
 
-   Clicking on a product navigates to the Product Detail component, where users can:
-
-   Add the item to the cart
-
-   Or cancel/back out from the product view.
-
-  Once a product is added to the cart:
-
-  The cart icon updates to show the number of items added.
-
-   Each item in the cart has a Remove button to delete it.
-
-  At the bottom of the cart:
-
-  The total price of all products is displayed.
-
-  A "Dispatch" button is available for further action.
-
- 
-
-  *****Note***
-
-   There may be some minor bugs in the product API, which can cause category-specific product rendering to behave unexpectedly at times.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

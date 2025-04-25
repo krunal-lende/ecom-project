@@ -1,0 +1,48 @@
+
+.products_container{
+margin: 50px 20px;
+
+@media screen and (max-width: 480px) {
+    margin: 75px 0;
+}
+}
+
+.sec_heading{
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+
+        @media screen and (max-width: 480px) {
+       margin-bottom: 35px;
+       font-size: 24px;   
+    }
+
+    &:after{
+        content: "";
+        display: block;
+        margin-top: 5px;
+        width: 140px;
+        height: 5px;
+        background-color: blueviolet;
+
+    }
+    @media screen and (max-width: 480px) {
+        margin-top: 10px;
+     }
+    
+}
+
+.products{
+display: flex;
+flex-flow: wrap;
+gap: 10px;
+
+
+
+@media screen and (max-width: 480px) {
+    gap: 20px;
+ }
+
+}

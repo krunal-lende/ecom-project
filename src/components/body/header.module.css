@@ -1,0 +1,111 @@
+.main_header{
+    width: 100%;
+    padding: 0 20px;
+    background-color: #212121;
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.header_content{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   height: 50px;
+   max-width: 1200px;
+   margin:  0 auto;
+   
+
+}
+
+.left{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+.left li{
+    font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+}
+
+.center{
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    
+}
+
+.right{
+    display:flex ;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.right h2{
+    cursor: pointer;
+}
+
+.search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px; 
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+    color: black; 
+    
+}
+
+.search input {
+    border: none;
+    outline: none;
+}
+
+
+.search_icon:hover{
+    background-color: rgb(221, 221, 221);
+    
+}
+.card_icon{
+    position: relative;
+}
+
+.card_icon span{
+    min-width: 20px;
+    text-align: center;
+    background-color: blueviolet;
+    padding: 2.5px;
+    position: absolute;
+    top: -5px;
+    left: -8px;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .main_header{
+        padding: 0 30px;
+    }
+
+    .header_content{
+      height: 70px;
+      
+       
+    
+    }
+    .left{
+     display:none;
+    }
+    
+    .center{
+       
+        position: relative;
+    }
+}

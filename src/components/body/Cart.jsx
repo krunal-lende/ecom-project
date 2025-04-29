@@ -1,4 +1,4 @@
-  import React, { useContext } from 'react'
+import React, { useContext } from 'react'
 import styles from "./cart.module.css"
 import { AppContext } from '../../App'
 
@@ -9,7 +9,7 @@ const Cart = ({setShowCart,showCart}) => {
      const removeHandlar=(id)=>{
         const sort =cart.filter(item=>item.id !== id)
         // console.log(sort)
-        setCart(sort)
+        setCart(sort) 
      }
        
      
@@ -40,26 +40,6 @@ const Cart = ({setShowCart,showCart}) => {
                 ))
             }
                 </div>
-            
-                 { (cart.length === 0)?  <div className={styles.cart_empty}>Your cart is empty.</div>:""}
-                <div className={styles.card_contain}>
-                {
-                cart.map((prod)=>(<>
-                    <div className={styles.card_item}>
-                        <img src={prod.images[0]} alt={prod.title} />
-                        <div className={styles.info}>
-                        <p>{prod.title}</p>
-                        <h4>Price:- ${prod.price}</h4>
-                        </div>
-                        
-                        <button className={styles.remove}onClick={()=>removeHandlar(prod.id)} > Remove</button>
-                        
-                    </div>
-                    <hr />
-                    </>
-                ))
-            }
-                </div>
 
                 { (cart.length !== 0)?  <div className={styles.total}>
             
@@ -67,6 +47,8 @@ const Cart = ({setShowCart,showCart}) => {
             <button onClick={()=>alert("Ready to Shipping ")}>Procid</button>
 
         </div>:""}
+            
+            
 
         </div>
 

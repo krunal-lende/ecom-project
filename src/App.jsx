@@ -21,7 +21,11 @@ const App = () => {
       <Route path='/products/:id' element={<Products />} />
     </Routes>
     
-    {/* <Footer /> */}
+    <Footer >
+    <p>© 2025 E-com project. </p>
+    <h3>avoid copyright issues.</h3>
+    </Footer>
+      
     </AppContext.Provider>
     </BrowserRouter>
   )
